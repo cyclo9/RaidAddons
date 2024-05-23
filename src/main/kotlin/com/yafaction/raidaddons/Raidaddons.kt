@@ -1,9 +1,9 @@
-package com.raidaddons
+package com.yafaction.raidaddons
 
 import net.fabricmc.api.ModInitializer
 import org.slf4j.LoggerFactory
 
-object RaidAddons : ModInitializer {
+object Raidaddons : ModInitializer {
     private val logger = LoggerFactory.getLogger("raidaddons")
 
 	override fun onInitialize() {
