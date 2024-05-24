@@ -16,12 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			{
-				"value": "com.yafaction.raidaddons.Raidaddons",
-				"adapter": "kotlin"
-			}
-		],
-		"fabric-datagen": [
+			{ "value": "com.yafaction.raidaddons.Raidaddons", "adapter": "kotlin" },
+            { "value": "com.yafaction.raidaddons.TreeRoom", "adapter": "kotlin" }
+        ],
+        "fabric-datagen": [
 			{
 				"value": "com.yafaction.raidaddons.RaidaddonsDataGenerator",
 				"adapter": "kotlin"
