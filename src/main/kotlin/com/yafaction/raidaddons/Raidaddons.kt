@@ -11,5 +11,8 @@ object Raidaddons : ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		logger.info("Hello Fabric world!")
+		BlockHighlighter.onInitialize()
+            val waypointColor = 0xFF0000
+            BlockHighlighter.addWaypoint(0.0, -55.0, 0.0, waypointColor)
 	}
 }

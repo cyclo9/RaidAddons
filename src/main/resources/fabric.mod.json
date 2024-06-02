@@ -5,8 +5,8 @@
 	"name": "raidaddons",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-        "CNGamer",
-		"cyclo9",
+		"CNGamer",
+		"cyclo9"
 	],
 	"license": "CC0-1.0",
 	"icon": "assets/raidaddons/icon.png",
@@ -22,6 +22,10 @@
 			{
 				"value": "com.yafaction.raidaddons.RaidaddonsDataGenerator",
 				"adapter": "kotlin"
+			},
+			{
+				"value": "com.yafaction.raidaddons.BlockHighlighter",
+				"adapter": "kotlin"
 			}
 		]
 	},
@@ -33,8 +37,8 @@
 		"minecraft": "~1.20.2",
 		"java": ">=17",
 		"fabric-api": "*",
-        "fabric-language-kotlin": ">=1.10.0"
-    },
+		"fabric-language-kotlin": ">=1.10.0"
+	},
 	"suggests": {
 		"another-mod": "*"
 	}
