@@ -1,15 +1,15 @@
 package com.yafaction.utils
 
-import net.minecraft.server.network.ServerPlayerEntity
+import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.text.Text
 
 /**
- * Utilizes regex to retrieve the player's name from a ServerPlayerEntity instance
+ * Utilizes regex to retrieve the player's name from a PlayerEntity instance
  *
- * @param playerEntity (ServerPlayerEntity)
+ * @param playerEntity (PlayerEntity)
  * @return player (String)
  */
-fun getPlayerAsString(playerEntity: ServerPlayerEntity): String? {
+fun getPlayerAsString(playerEntity: PlayerEntity): String? {
     val regex = """\['([^']+)'""".toRegex()
     val matchResult = regex.find(playerEntity.toString())
     return matchResult?.groups?.get(1)?.value

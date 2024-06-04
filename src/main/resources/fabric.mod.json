@@ -17,7 +17,8 @@
 	"entrypoints": {
 		"main": [
 			{ "value": "com.yafaction.raidaddons.Raidaddons", "adapter": "kotlin" },
-            { "value": "com.yafaction.raidaddons.TreeRoom", "adapter": "kotlin" }
+            { "value": "com.yafaction.raidaddons.TreeRoom", "adapter": "kotlin" },
+            { "value": "com.yafaction.raidaddons.Highlighter", "adapter": "kotlin" }
         ],
         "fabric-datagen": [
 			{
