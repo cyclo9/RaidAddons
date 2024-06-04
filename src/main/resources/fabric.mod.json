@@ -8,23 +8,22 @@
 		"CNGamer",
 		"cyclo9"
 	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
 	"license": "CC0-1.0",
 	"icon": "assets/raidaddons/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			{
-				"value": "com.yafaction.raidaddons.Raidaddons",
-				"adapter": "kotlin"
-			}
-		],
-		"fabric-datagen": [
+			{ "value": "com.yafaction.raidaddons.Raidaddons", "adapter": "kotlin" },
+            { "value": "com.yafaction.raidaddons.TreeRoom", "adapter": "kotlin" },
+            { "value": "com.yafaction.raidaddons.Highlighter", "adapter": "kotlin" }
+        ],
+        "fabric-datagen": [
 			{
 				"value": "com.yafaction.raidaddons.RaidaddonsDataGenerator",
-				"adapter": "kotlin"
-			},
-			{
-				"value": "com.yafaction.raidaddons.BlockHighlighter",
 				"adapter": "kotlin"
 			}
 		]
@@ -37,8 +36,8 @@
 		"minecraft": "~1.20.2",
 		"java": ">=17",
 		"fabric-api": "*",
-		"fabric-language-kotlin": ">=1.10.0"
-	},
+        "fabric-language-kotlin": ">=1.10.0"
+    },
 	"suggests": {
 		"another-mod": "*"
 	}
